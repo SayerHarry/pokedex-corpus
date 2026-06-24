@@ -67,7 +67,7 @@ class PokedexFetcher:
 
 if __name__ == "__main__":
     fetch = PokedexFetcher()
-    for i in range(1, 1008): #1025 pokemon entries, but for testing purposes, we will limit it to 3
+    for i in range(1, 1009): #1025 pokemon entries, but for testing purposes, we will limit it to 3
         id = str(i)
         soup = fetch.fetch_pokemon(id)
         if soup:
